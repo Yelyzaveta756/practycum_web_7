@@ -40,9 +40,26 @@
                 </div>
                 <div class="hero-text-container">
                     <h1 class="company-motto">Freshly Made Donuts Daily</h1>
-                    <p class="hero-paragraph">Indulge in the extraordinary experience of our artisanal donuts, where every creation is a masterpiece of flavor and texture. We believe that great donuts begin with exceptional ingredients - that's why we source locally whenever possible, using organic flour, farm-fresh eggs, and seasonal fruits at their peak ripeness. Our skilled bakers pour their heart into every batch, from kneading the dough at dawn to the final artistic decoration. Whether you choose a classic glazed or one of our inventive specialty flavors, you're not just tasting a donut; you're savoring a moment of crafted perfection, a small celebration of life's sweetest pleasures made with dedication and care.</p>
-                    <button class="menu-button"><a href="menu.html" class="menu-link">View Our Menu</a></button>
-                    
+                    <div class="animation-container">
+                        <span style="display:flex; align-items: center; justify-content: space-between; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #333;">
+                            <p class="animation-text">Animation control block:</p>
+                            <!-- Кнопка Play для показу анімації -->
+                            <button id="playBtn" class="play-btn">Play Animation</button>
+                        </span>
+                        <button class="clear-btn">Clear Logs</button>
+                        <div id="result" class="result" style="display: none;">
+                            <table class="result-table">
+                                <thead>
+                                    <tr>
+                                        <th>Server</th>
+                                        <th>LocalStorage</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="resultsBody"> </tbody>
+                            </table>
+                        </div>
+                        <p id="simple-message" class="simple-message">No data</p>
+                    </div>
                 </div>
             </div>
             <div class="popular-container">
@@ -104,5 +121,29 @@
                 <img class="logo" src="images/logo.png" alt="Donut Logo" width="85" height="85">
             </a> 
     </footer>
+
+
+    <!-- Анімаційний блок -->
+    <div id="sheet" class="sheet">
+        <div class="work">
+            <div id="controls" class="controls">
+                    <ul id="message" class="message list">
+                        <li>work</li>
+                        <!-- додавати li -->
+                    </ul>
+                <div class="control-button-container">
+                    <button id="startBtn" class="control-btn">Start</button>
+                    <button id="stopBtn" class="control-btn" style="display: none;">Stop</button>
+                    <button id="reloadBtn" class="control-btn" style="display: none;">Reload</button>
+                    <button id="closeBtn" class="control-btn">Close</button>
+                </div>  
+            </div>
+            <div id="anim" class="anim">
+                <div id="ball" class="ball"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js" type="module"></script>
 </body>
 </html>
