@@ -602,6 +602,15 @@ footer .logo {
     border-radius: 10px;
 }
 
+.animation-container span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}
+
 .animation-text {
     color:#333;
     font-size: 20px;
@@ -660,8 +669,8 @@ footer .logo {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    min-width: 600px;
-    min-height: 300px;
+    min-width: 350px;
+    min-height: 100px;
     max-width: 900px;
     max-height: 700px;
 }
@@ -745,4 +754,23 @@ footer .logo {
 .result-table th {
     background-color: #f7e0f7;
     font-weight: 600;
+}
+
+@media screen and (max-width:768px) {
+
+    .animation-container span {
+        display: block;
+    }
+
+    .animation-text {
+        margin-bottom: 10px;
+    }
+
+    .anim {
+        height: 60%;
+    }
+
+    .work {
+        height: calc(60% + 50px);
+    }
 }
