@@ -176,13 +176,13 @@ function openAnimBlock() {
   if (!dom.sheet) {
     return;
   }
-  clearLogs();
 
   dom.sheet.style.display = "flex";
 
   dom.anim.style.display = "block";
   dom.square.style.display = "block";
 
+  clearLogs();
   logEvent("play", "Play clicked");
 }
 
