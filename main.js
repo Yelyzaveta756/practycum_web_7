@@ -183,7 +183,6 @@ function openAnimBlock() {
   dom.anim.style.display = "block";
   dom.square.style.display = "block";
 
-  resetMessages();
   logEvent("play", "Play clicked");
 }
 
